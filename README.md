@@ -2,6 +2,8 @@
 
 # [BrainStorm] 🎯
 
+netlify:  neon-kringle-4ea08a.netlify.app
+
 
 ## Basic Details
 ### Team Name: [Etern]
