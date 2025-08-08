@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrainStorm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="logo">BrainStorm</div>
+    </div>
+    <div class="card">
+      <label for="content" class="main-label">Paste,Generate,Remember</label>
+      <textarea id="content" placeholder="Paste article, textbook content, notes, or drop a .txt file here..."></textarea>
+      <div class="center-quote">"Questions are the engines of intellect."</div>
+      <div class="meta">
+        <div class="uploader">
+          <label class="filelabel" for="file">Upload .txt</label>
+          <input id="file" type="file" accept=".txt" />
+        </div>
+      </div>
+      <div class="controls">
+        <div>
+          <label for="count">Number of items</label>
+          <input id="count" type="number" min="1" max="200" value="8" />
+        </div>
+        <div>
+          <label>&nbsp;</label>
+          <div style="display:flex;gap:8px">
+            <button id="genQ" class="btn">Generate Questions</button>
+            <button id="clear" class="btn">Clear</button>
+          </div>
+        </div>
+        <div style="margin-left:auto;">
+          <label>&nbsp;</label>
+          <div style="display:flex;gap:8px">
+            <button id="downloadTxt" class="btn">Download TXT</button>
+            <button id="printPdf" class="btn">Print / Save PDF</button>
+          </div>
+        </div>
+      </div>
+      <div class="output" id="output" aria-live="polite"></div>
+      <div class="footer">Built for quick revision.</div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
